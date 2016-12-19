@@ -1,0 +1,30 @@
+{
+  "name": "ts-feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js",
+    "test:watch": "./node_modules/jest/bin/jest.js --watch",
+    "start": "node_modules/nodemon/bin/nodemon.js builds/Server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "4.0.34",
+    "@types/jest": "16.0.1",
+    "jest": "18.0.0",
+    "nodemon": "1.11.0"
+  },
+  "jest": {
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "testPathIgnorePatterns": ["/builds"],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": ["ts", "tsx", "js"]
+  },
+  "devDependencies": {
+    "ts-jest": "17.0.3"
+  }
+}
