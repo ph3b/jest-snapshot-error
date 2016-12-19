@@ -17,7 +17,7 @@
   },
   "jest": {
     "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
-    "testPathIgnorePatterns": ["/builds"],
+    "testPathIgnorePatterns": ["/build"],
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
